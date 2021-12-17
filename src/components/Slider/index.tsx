@@ -15,7 +15,7 @@ SwiperCore.use([EffectFade, Navigation, Pagination, Autoplay]);
 export function Slider() {
   return (
     <Flex
-      width="100%"
+      width={[600, 1000, 1240]}
       maxW="1240px"
       mx="auto"
       my={["5","10"]}
@@ -33,10 +33,10 @@ export function Slider() {
           <SliderItem url="" imageUrl="/europe.png" title="Europa" subtitle="O velho continente." />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderItem url="" imageUrl="/europe.png" title="São paulo" subtitle="Cidade de gente foda" />
+          <SliderItem url="" imageUrl="/europe.png" title="São paulo" subtitle="Terra da garoa" />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderItem url="" imageUrl="/europe.png" title="RJ" subtitle="Tilt" />
+          <SliderItem url="" imageUrl="/europe.png" title="RJ" subtitle="Paraíso tropical" />
         </SwiperSlide>
       </Swiper>
     </Flex>

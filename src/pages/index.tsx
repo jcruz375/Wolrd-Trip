@@ -7,11 +7,9 @@ import { CategoriesSection } from "../components/CategoriesSection";
 import { Header } from "../components/Header";
 import { Slider } from "../components/Slider";
 
-
-
 function Home() {
   return (
-    <Flex as="main" w="100vw" maxWidth={1800} pb="41" h="100vh" direction="column">
+    <Flex as="main" w="100vw" maxWidth={[700, 1800]} h="100vh" direction="column">
       <Header />
 
       <Banner />
@@ -19,30 +17,30 @@ function Home() {
       <CategoriesSection />
 
       <Divider
-        w={90}
+        w={[200, 90]}
         my="10"
         borderColor="gray.900"
         display="block"
-        mr="auto"
-        ml="auto" />
+        mx={[200, "auto"]} 
+      />
 
       <Flex
         as="section"
-        w="100%"
-        px={200}
+        w={[600, 1000, 1800]}
+        px={[100, 200]}
         align="center"
         justify="center"
         direction="column"
       >
         <Text
           as="h1"
-          fontSize="4xl"
+          fontSize="2xl"
         >
           Vamos nessa?
         </Text>
         <Text
           as="h1"
-          fontSize="4xl"
+          fontSize="2xl"
         >
           Então escolha seu continente
         </Text>

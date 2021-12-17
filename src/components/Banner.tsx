@@ -1,12 +1,18 @@
-import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Stack, Text, useBreakpointValue } from "@chakra-ui/react";
 
 export function Banner() {
+  const isWideScreen = useBreakpointValue({
+    base: false,
+    lg: true,
+  });
+
   return (
     <Flex
       as="nav"
       bgImage="url('banner.png')"
-      h="96"
-      px={140}
+      w={[600, 1000, 1800]}
+      h={[500, "96"]}
+      p={["10", "8"]}
       justify="space-between"
       align="center"
       bgSize="cover"
@@ -15,7 +21,7 @@ export function Banner() {
         <Box>
           <Text
             w={400}
-            fontSize={36}
+            fontSize={30}
             fontWeight="medium"
             color="gray.50"
           >
@@ -23,7 +29,7 @@ export function Banner() {
           </Text>
           <Text
             w={480}
-            fontSize={36}
+            fontSize={30}
             fontWeight="medium"
             color="gray.50"
           >
@@ -31,14 +37,16 @@ export function Banner() {
           </Text>
         </Box>
         <Text
-          fontSize={20}
+          fontSize={16}
           fontWeight="regular"
           color="gray.100"
         >
           Chegou a hora de tirar do papel a viagem que você sempre sonhou.
         </Text>
       </Stack>
-      <Image src="Airplane.png" alt="Airplane" mt={170} />
+      {isWideScreen && (
+        <Image src="Airplane.png" alt="Airplane" mt={170} />
+      )}
     </Flex>
   );
 }
