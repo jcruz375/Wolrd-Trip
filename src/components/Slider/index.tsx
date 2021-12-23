@@ -18,7 +18,7 @@ export function Slider() {
       width={[600, 1000, 1240]}
       maxW="1240px"
       mx="auto"
-      my={["5","10"]}
+      my={["5", "10"]}
     >
       <Swiper
         slidesPerView={1}
@@ -30,13 +30,44 @@ export function Slider() {
         style={{ width: '100%', flex: '1' }}
       >
         <SwiperSlide>
-          <SliderItem url="" imageUrl="/europe.png" title="Europa" subtitle="O velho continente." />
+          <SliderItem
+            url="/continents/south-america"
+            imageUrl="/south-america/south-america.jpg"
+            title="Ameriaca do sul"
+            subtitle="paraíso tropical."
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderItem url="" imageUrl="/europe.png" title="São paulo" subtitle="Terra da garoa" />
+          <SliderItem
+            url="/continents/europe"
+            imageUrl="/europe/europe.png"
+            title="Europa"
+            subtitle="O velho continente."
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <SliderItem url="" imageUrl="/europe.png" title="RJ" subtitle="Paraíso tropical" />
+          <SliderItem
+            url="/continents/asia"
+            imageUrl="/asia/asia.jpg"
+            title="Ásia"
+            subtitle="grandes tradições."
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SliderItem
+            url="/continents/oceania"
+            imageUrl="/oceania/oceania.jpg"
+            title="Oceania"
+            subtitle="Exótico."
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <SliderItem
+            url="/continents/north-america"
+            imageUrl="/north-america/north-america.jpg"
+            title="América do norte"
+            subtitle="O grande ocidente."
+          />
         </SwiperSlide>
       </Swiper>
     </Flex>
