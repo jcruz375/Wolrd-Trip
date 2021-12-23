@@ -33,7 +33,7 @@ export function Slider() {
           <SliderItem
             url="/continents/south-america"
             imageUrl="/south-america/south-america.jpg"
-            title="Ameriaca do sul"
+            title="America do sul"
             subtitle="paraíso tropical."
           />
         </SwiperSlide>
