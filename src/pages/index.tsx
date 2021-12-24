@@ -1,17 +1,11 @@
-import { Box, Divider, Flex, HStack, Icon, Image, Stack, Text } from "@chakra-ui/react";
-import { BiBuildings, BiDrink, BiWorld } from "react-icons/bi";
-import { FaUmbrellaBeach } from "react-icons/fa";
-import { GiGreekTemple } from "react-icons/gi";
+import { Divider, Flex, Text } from "@chakra-ui/react";
 import { Banner } from "../components/Banner";
 import { CategoriesSection } from "../components/CategoriesSection";
-import { Header } from "../components/Header";
 import { Slider } from "../components/Slider";
 
 function Home() {
   return (
     <Flex as="main" w="100vw" maxWidth={[700, 1800]} h="100vh" direction="column">
-      <Header />
-
       <Banner />
 
       <CategoriesSection />
